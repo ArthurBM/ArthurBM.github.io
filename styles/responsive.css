@@ -2,4 +2,9 @@
     .banner-container {
         height: 80vh;
     }
+
+    main .group-productus-container {
+        width: 100%;
+        justify-content: space-evenly;
+    }
 }
