@@ -14,7 +14,7 @@
 }
 
 .banner-container header img {
-  height: 80px;
+  width: 134px;
 }
 
 /* .banner-container header .title-container {
@@ -84,9 +84,9 @@ input:checked ~ label .hamburguer:after {
 .banner-container .text-banner {
   position: absolute;
   right: 30px;
-  top: 500px;
+  bottom: 65px;
   text-align: center;
-  width: 225px; /* Set the width of the positioned div */
+  width: 215px;
 }
 
 .banner-container .text-banner h1 {
