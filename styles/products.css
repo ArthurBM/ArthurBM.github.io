@@ -25,34 +25,39 @@ main h1 {
     text-align: center;
 }
 
-main .product-container p {
-    color: var(--preto);
-}
-
-main .product-container#ring {
-    background: url("/assets/ring.png") no-repeat center;
-}
-
-main .product-container#watch {
-    background: url("/assets/watch.png") no-repeat center;
-}
-
-main .product-container#necklace {
-    background: url("/assets/necklace.png") no-repeat center;
-}
-
-main .product-container {
-    background-size: contain;
+main .group-productus-container .product-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 288px;
     width: 100%;
+    margin-top: 65px;
+    background-size: contain;
 }
 
+main .group-productus-container .product-container img {
+    max-height: 100%;
+    max-width: 100%;
+}
 
-main .product-container button {
+/* main .group-productus-container .product-container p {
+    color: var(--preto);
+}
+
+main .group-productus-container #ring.product-container {
+    background: url("/assets/ring.png") no-repeat center;
+}
+
+main .group-productus-container #watch.product-container {
+    background: url("/assets/watch.png") no-repeat center;
+}
+
+main .group-productus-container #necklace.product-container {
+    background: url("/assets/necklace.png") no-repeat center;
+} */
+
+main .group-productus-container .product-container button {
     width: 167px;
     height: 52px;
 
@@ -64,8 +69,9 @@ main .product-container button {
     font-weight: bold;
     font-size: 16px;
 
-    margin-top: 50px;
+    /* margin-top: 50px; */
 
     transition: background-color 400ms;
     cursor: pointer;
+    z-index: 99;
 }
