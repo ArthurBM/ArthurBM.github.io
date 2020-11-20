@@ -13,7 +13,11 @@
     padding-top: 32px;
 }
 
-.banner-container header .title-container {
+.banner-container header img {
+  height: 80px;
+}
+
+/* .banner-container header .title-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +30,7 @@
  
 .banner-container header .title-container h1 {
   font-size: 42px;
-}
+} */
 
 .hamburguer {
   position: relative;

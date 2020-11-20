@@ -1,15 +1,32 @@
 main {
+    width: 100%;
     background-color: var(--preto);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100%;
+}
+
+main .group-productus-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; */
+    /* height: 100vh; */
+    width: 60%;
+    
 }
 
 main h1 {
     color: var(--bege);
+    text-align: center;
+}
+
+main .product-container p {
+    color: var(--preto);
 }
 
 main .product-container#ring {
@@ -30,19 +47,20 @@ main .product-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: auto;
+    height: 288px;
+    width: 100%;
 }
 
 
 main .product-container button {
-    width: 260px;
-    height: 56px;
+    width: 167px;
+    height: 52px;
 
-    background-color: var(--bege);
-    border-radius: 8px;
-    border: 0;
+    background-color: var(--rose);
+    /* border-radius: 8px; */
+    border: 2px solid var(--bege);
 
-    color: var(--cinza);
+    color: var(--preto);
     font-weight: bold;
     font-size: 16px;
 
