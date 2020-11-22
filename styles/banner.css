@@ -3,6 +3,7 @@
     width: 100%;
     background: url('/assets/banner.png') no-repeat left;
     background-size: cover;
+    position: relative;
     /* background-position-y: center; */
 }
 
@@ -32,7 +33,20 @@
   font-size: 42px;
 } */
 
-.hamburguer {
+.banner-container header .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  box-shadow: 0 0 0 0 var(--preto), 0 0 0 0 var(--preto);
+  transition: box-shadow 1.1s cubic-bezier(0.19, 1, 0.22, 1);
+  /* transition: background-color 0s; */
+  z-index: 2;
+}
+
+.banner-container header .hamburguer {
   position: relative;
   display: block;
   background: var(--cinza);
@@ -41,11 +55,10 @@
   /* top: 29px;
   left: 15px; */
   transition: 0.5s ease-in-out;
-  cursor: pointer;
 }
 
-.hamburguer:before,
-.hamburguer:after {
+.banner-container header .hamburguer:before,
+.banner-container header .hamburguer:after {
   background: var(--cinza);
   content: '';
   display: block;
@@ -55,30 +68,60 @@
   transition: 0.5s ease-in-out;
 }
 
-.hamburguer:before {
+.banner-container header .hamburguer:before {
   top: -14px;
 }
 
-.hamburguer:after {
+.banner-container header .hamburguer:after {
   bottom: -14px;
 }
 
-input {
+.banner-container header input {
   display: none;
 }
 
-input:checked ~ label .hamburguer {
+.banner-container header input:checked ~ label .menu {
+  box-shadow: 0 0 0 130vw var(--preto), 0 0 0 130vh var(--preto);
+  background-color: var(--preto);
+}
+
+.banner-container header input:checked ~ label .hamburguer {
   transform: rotate(45deg);
 }
 
-input:checked ~ label .hamburguer:before {
+.banner-container header input:checked ~ label .hamburguer:before {
   transform: rotate(90deg);
   top: 0;
 }
 
-input:checked ~ label .hamburguer:after {
+.banner-container header input:checked ~ label .hamburguer:after {
   transform: rotate(90deg);
   bottom: 0;
+}
+
+.banner-container header input:checked ~ ul {
+  opacity: 1;
+}
+
+.banner-container header ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  opacity: 0;
+  transition: .25s ease-in-out;
+  text-align: center;
+}
+
+.banner-container header ul li {
+  margin-bottom: 50px;
+}
+
+.banner-container header ul li a {
+  font-size: 35px;
+  color: var(--bege);
+  text-decoration: none;
 }
 
 .banner-container .text-banner {
