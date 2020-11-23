@@ -7,4 +7,27 @@
         width: 100%;
         justify-content: space-evenly;
     }
+
+    .banner-container header label {
+        display: none;
+    }
+
+    .banner-container header ul {
+        opacity: 1;
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 40%;
+        transform: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .banner-container header ul li {
+        margin-bottom: 0;
+    }
+    .banner-container header ul li a {
+        color: var(--cinza);
+    }
 }

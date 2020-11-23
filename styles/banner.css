@@ -18,22 +18,7 @@
   width: 134px;
 }
 
-/* .banner-container header .title-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.banner-container header .title-container p {
-    letter-spacing: 6.4px;
-}
- 
-.banner-container header .title-container h1 {
-  font-size: 42px;
-} */
-
-.banner-container header .menu {
+.banner-container header nav .menu {
   position: relative;
   display: flex;
   justify-content: center;
@@ -47,7 +32,7 @@
   /* transition: background-color 0s; */
 }
 
-.banner-container header .hamburguer {
+.banner-container header nav .hamburguer {
   position: relative;
   display: block;
   background: var(--cinza);
@@ -58,8 +43,8 @@
   transition: 0.5s ease-in-out;
 }
 
-.banner-container header .hamburguer:before,
-.banner-container header .hamburguer:after {
+.banner-container header nav .hamburguer:before,
+.banner-container header nav .hamburguer:after {
   background: var(--cinza);
   content: '';
   display: block;
@@ -69,42 +54,42 @@
   transition: 0.5s ease-in-out;
 }
 
-.banner-container header .hamburguer:before {
+.banner-container header nav .hamburguer:before {
   top: -14px;
 }
 
-.banner-container header .hamburguer:after {
+.banner-container header nav .hamburguer:after {
   bottom: -14px;
 }
 
-.banner-container header input {
+.banner-container header nav input {
   display: none;
 }
 
-.banner-container header input:checked ~ label .menu {
+.banner-container header nav input:checked ~ label .menu {
   box-shadow: 0 0 0 130vw var(--preto), 0 0 0 130vh var(--preto);
   background-color: var(--preto);
 }
 
-.banner-container header input:checked ~ label .hamburguer {
+.banner-container header nav input:checked ~ label .hamburguer {
   transform: rotate(45deg);
 }
 
-.banner-container header input:checked ~ label .hamburguer:before {
+.banner-container header nav input:checked ~ label .hamburguer:before {
   transform: rotate(90deg);
   top: 0;
 }
 
-.banner-container header input:checked ~ label .hamburguer:after {
+.banner-container header nav input:checked ~ label .hamburguer:after {
   transform: rotate(90deg);
   bottom: 0;
 }
 
-.banner-container header input:checked ~ ul {
+.banner-container header nav input:checked ~ ul {
   opacity: 1;
 }
 
-.banner-container header ul {
+.banner-container header nav ul {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -116,11 +101,11 @@
   z-index: 2;
 }
 
-.banner-container header ul li {
+.banner-container header nav ul li {
   margin-bottom: 50px;
 }
 
-.banner-container header ul li a {
+.banner-container header nav ul li a {
   font-size: 35px;
   color: var(--bege);
   text-decoration: none;
