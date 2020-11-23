@@ -13,7 +13,7 @@
     <title>Citi's Butique</title>
 </head>
 <body>
-    <div class="banner-container">
+    <div class="banner-container" id="home">
         <header>
             <img src="/assets/logo-branca.svg" alt="logo-branca">
             
@@ -24,11 +24,11 @@
                     <span class="hamburguer"></span>
                 </div>
             </label>
-
+            
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">PRODUTOS</a></li>
-                <li><a href="#">CONTATO</a></li>
+                <li><a href="#home" onclick="">HOME</a></li>
+                <li><a href="#products">PRODUTOS</a></li>
+                <li><a href="#contact">CONTATO</a></li>
             </ul>
 
             <!-- <nav>
@@ -42,7 +42,7 @@
 
     </div>
 
-    <main>
+    <main id="products">
         <h1>PRODUTOS</h1>
 
         <div class="group-productus-container">
@@ -69,7 +69,7 @@
         
     </main>
 
-    <footer>
+    <footer id="contact">
 
         <div class="contacts-section">
 
