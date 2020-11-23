@@ -34,6 +34,7 @@
 } */
 
 .banner-container header .menu {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,8 +43,8 @@
   cursor: pointer;
   box-shadow: 0 0 0 0 var(--preto), 0 0 0 0 var(--preto);
   transition: box-shadow 1.1s cubic-bezier(0.19, 1, 0.22, 1);
-  /* transition: background-color 0s; */
   z-index: 2;
+  /* transition: background-color 0s; */
 }
 
 .banner-container header .hamburguer {
@@ -112,6 +113,7 @@
   opacity: 0;
   transition: .25s ease-in-out;
   text-align: center;
+  z-index: 2;
 }
 
 .banner-container header ul li {

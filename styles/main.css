@@ -17,6 +17,7 @@ body {
     font-family: 'Playfair Display', serif;
     /* background: #f0f0f5; */
     -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
 }
 a {
     text-decoration: none;
