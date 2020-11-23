@@ -90,6 +90,20 @@
         flex-direction: row;
         justify-content: space-around;
     }
+    
+    footer .contacts-section img {
+        width: 320px;
+    }
+
+    footer .contacts-section .group-informations .contact-information img {
+        width: 27px;
+        height: 27px;
+    }
+
+    footer .contacts-section .group-informations .contact-information p {
+        font-size: 35px;
+    }
+
 
     footer .made-with-section {
         height: 122px;
