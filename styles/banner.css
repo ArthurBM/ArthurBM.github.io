@@ -87,9 +87,11 @@
 
 .banner-container header nav input:checked ~ ul {
   opacity: 1;
+  display: initial;
 }
 
 .banner-container header nav ul {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;

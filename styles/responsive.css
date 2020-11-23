@@ -1,33 +1,105 @@
+/* Banner */
 @media(min-width: 768px) {
     .banner-container {
         height: 80vh;
     }
 
-    main .group-productus-container {
-        width: 100%;
-        justify-content: space-evenly;
+    .banner-container header img {
+        width: 320px;
     }
 
-    .banner-container header label {
+    .banner-container header nav label {
         display: none;
     }
 
-    .banner-container header ul {
+    .banner-container header nav {
+        width: 35%;
+    }
+
+    .banner-container header nav ul {
         opacity: 1;
         position: relative;
         top: auto;
         left: auto;
-        width: 40%;
+        width: 100%;
         transform: none;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    .banner-container header ul li {
+    .banner-container header nav ul li {
         margin-bottom: 0;
     }
-    .banner-container header ul li a {
+    .banner-container header nav ul li a {
         color: var(--cinza);
     }
+
+    .banner-container .line-nav-container {
+        width: 100%;
+        height: 5px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .banner-container .line-nav-container .line-nav {
+        background-color: var(--bege);
+        width: 42%;
+        opacity: 0.5;
+    }
+
+    .banner-container .text-banner {
+        width: 600px;
+        height: 270px;
+        right: 160px;
+        bottom: 120px;
+    }
+
+    .banner-container .text-banner h1 {
+        font-size: 100px;
+        font-weight: 500;
+    }
+}
+
+/* Products */
+@media(min-width: 768px) {
+    main .group-productus-container {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    main h1 {
+        font-size: 80px;
+    }
+    
+    main .group-productus-container .product-container{
+        height: 547px;
+        width: 437px;
+    }
+
+    main .group-productus-container .product-container button {
+        width: 318px;
+        height: 90px;
+        font-size: 40px;
+        font-family: 'Playfair Display', serif;
+    }
+}
+/* Footer */
+@media(min-width: 768px) {
+    footer .contacts-section {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    footer .made-with-section {
+        height: 122px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    footer .made-with-section p {
+        font-size: 35px;
+        margin-right: 160px;
+    }
+
 }
